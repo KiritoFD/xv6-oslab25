@@ -8,6 +8,8 @@ volatile static int started = 0;
 
 // start() jumps here in supervisor mode on all CPUs.
 void main() {
+    // 学号: 21302010057
+    // 函数作用: 初始化内核，启动第一个进程
   if (cpuid() == 0) {
     // consoleinit();
     // printfinit();
